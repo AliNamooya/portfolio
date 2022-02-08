@@ -7,5 +7,113 @@
 .masthead {
   padding-top: calc(6rem + 104px);
   padding-bottom: 6rem;
+  height: 100vh;
+  background-image: url(/images/banner_portfolio.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#parcours {
+  background-color: grey;
+  padding: 6rem 0;
+}
+
+#parcours .center-line {
+  position: absolute;
+  height: 170%;
+  width: 4px;
+  background-color: white;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#parcours .timeline-content {
+  border-radius: 5px;
+  width: calc(50% - 40px);
+  position: relative;
+}
+
+#parcours .timeline-content::before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  top: 40px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#parcours .parcours-item-1::before,
+#parcours .parcours-item-3::before,
+#parcours .parcours-item-5::before {
+  right: -8px;
+}
+
+#parcours .parcours-item-2::before,
+#parcours .parcours-item-4::before {
+  left: -8px;
+}
+
+#parcours .icon {
+  position: absolute;
+  background: grey;
+  color: white;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  line-height: 55px;
+  border-radius: 50%;
+  top: 20px;
+  font-size: 30px;
+  font-weight: 100px;
+}
+
+#parcours .parcours-item-1 .icon,
+#parcours .parcours-item-3 .icon,
+#parcours .parcours-item-5 .icon {
+  right: -70px;
+}
+
+#parcours .parcours-item-2 .icon,
+#parcours .parcours-item-4 .icon {
+  left: -70px;
+}
+
+#projet {
+  padding: 6rem 0;
+}
+
+@media screen and (max-width: 960px) {
+  #parcours .container {
+    margin-left: 30px;
+  }
+  .center-line {
+    left: 30px !important;
+    height: 150% !important;
+  }
+  .timeline-content-wrapper {
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+    margin-bottom: 20px;
+  }
+  .timeline-content {
+    width: 100% !important;
+    margin-left: 30px;
+  }
+  .timeline-content::before {
+    left: -8px;
+  }
+  .icon {
+    left: -64px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .center-line {
+    height: 170% !important;
+  }
 }
 /*# sourceMappingURL=main.css.map */
