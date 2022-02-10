@@ -17,19 +17,19 @@
 
 <body>
   <!-- navigation -->
-  <nav class="navbar navbar-expand-lg  text-uppercase" id="mainNav">
+  <nav class="navbar navbar-expand-lg text-uppercase" id="mainNav">
     <div class="container justify-content-end">
       <!-- Regarder plus tard pour le responsive mobile, javascript -->
-      <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded " type="button"
-        data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
-        aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler text-uppercase font-weight-bold" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
       </button>
       <!-- navbar -->
-      <div class="collapse navbar-collapse" id="navbarResponsive">
+      <div class="collapse navbar-collapse " id="navbarResponsive">
 
-        <ul class="navbar-nav ms-auto me-auto">
+        <ul class="navbar-nav ms-auto me-auto ">
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 me-3 radius20" href="#">Accueil</a>
           </li>
@@ -53,7 +53,7 @@
       <!-- Masthead Heading-->
       <h1 class="masthead-heading text-uppercase mb-3 ">Bienvenue</h1>
       <!-- Masthead Subheading-->
-      <p class="masthead-subheading font-weight-light mb-0">Je suis Ali, dévéloppeur web junior</p>
+      <p class="masthead-subheading font-weight-light mb-2">Je suis Ali, dévéloppeur web junior</p>
       <p class="masthead-subheading font-weight-light mb-0">Vous pouvez en apprendre d'avantages sur moi en consultant
         mon
         parcours et les projets que j'ai réalisés</p>
@@ -64,10 +64,11 @@
 
   <!-- Parcours Section -->
   <section id="parcours">
-    <h2>Parcours</h2>
-    <div class="center-line"></div>
+
 
     <div class=" container-lg">
+      <h2 class="mb-4">Parcours</h2>
+      <div class="center-line"></div>
       <div class="timeline">
 
         <div class="timeline-content-wrapper d-flex justify-content-start">
@@ -213,8 +214,9 @@
 
   <!-- Projet section (DESC) -->
   <section class="page-section projet" id="projet">
+
     <div class="container">
-      <h2 class="page-section-heading text-center text-uppercase  mb-0">Projets</h2>
+      <h2 class="page-section-heading text-uppercase  mb-4">Projets</h2>
       <!-- Grid items -->
       <div class="row justify-content-center">
         <!-- Projet Item 6-->
@@ -272,22 +274,34 @@
   </section>
 
   <section id="contact">
-    <h2>Contact</h2>
+
 
     <div class="container">
+      <h2 class="mb-4">Contact</h2>
+      <p class="text-white ">Pour toute question ou proposition de contrat, vous pouvez me contacter via les liens
+        ci-dessous et aussi
+        télécharger mon CV</p>
+      <p class="text-white mb-5">Vous pouvez m'envoyer un mail : ali.namooya1@gmail.com</p>
       <ul class="contact-list ms-auto me-auto  d-flex flex-row justify-content-center">
-        <li class="contact-item mx-0 mx-lg-1">
 
-          <a class="contact-link py-3 px-0 px-lg-3 " href="#"><i class="contact-icon fab fa-linkedin"></i></a>
-        </li>
         <li class="contact-item mx-0 mx-lg-1">
-          <a class="contact-link py-3 px-0 px-lg-3 " href="#"><i class="contact-icon fab fa-github-square"></i></a>
+          <a class="contact-link py-3 px-0 px-lg-3 " href="#https://www.linkedin.com/in/ali-namooya"><i
+              class="contact-icon fab fa-linkedin"></i></a>
         </li>
+
         <li class="contact-item mx-0 mx-lg-1">
-          <a class="contact-link py-3 px-0 px-lg-3 " href="#"><i class="contact-icon fas fa-paper-plane"></i></a>
+          <a class="contact-link py-3 px-0 px-lg-3 " href="https://github.com/AliNamooya"><i
+              class="contact-icon fab fa-github-square"></i></a>
         </li>
+
         <li class="contact-item mx-0 mx-lg-1">
-          <a class="contact-link py-3 px-0 px-lg-3" href="#"><i class="contact-icon far fa-file-alt"></i></a>
+          <a class="contact-link py-3 px-0 px-lg-3 " href="mailto: ali.namooya1@gmail.com"><i
+              class="contact-icon fas fa-paper-plane"></i></a>
+        </li>
+
+        <li class="contact-item mx-0 mx-lg-1">
+          <a class="contact-link py-3 px-0 px-lg-3" href="/images/Ali_Namooya_CV_Dev.pdf"
+            download="Ali_Namooya_CV_dev.pdf"><i class="contact-icon far fa-file-alt"></i></a>
         </li>
       </ul>
     </div>
@@ -309,14 +323,34 @@
               <div class="col-lg-8">
                 <!-- Modal Title -->
                 <h2 class="projet-modal-title text-secondary text-uppercase mb-0">Groupomania</h2>
+                <p>Création d'un réseau social d'entreprise</p>
                 <!-- Modal Image -->
                 <img class="img-fluid rounded mb-5 shadow" src="images/groupomania.png" alt="image projet 6">
                 <!-- Modal Description -->
-                <p class="mb-4">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, nostrum expedita, sapiente deserunt
-                  sit dolores alias voluptates recusandae eligendi animi adipisci incidunt repellendus mollitia amet
-                  aliquid, illum sunt assumenda perferendis!
+                <p class="mb-2">
+
+                  Ce projet est le dernier de la formation,l'objectif etant de crée un reseau social d'entreprise pour
+                  améliorer l'échange
+                  d'information entre les différents services et aussi l'ambiance général au sein de l'effectif.
+
+
                 </p>
+                <p class="mb-2">
+                  Le frontend a été crée grace au framework <span class="bold-word">VueJS</span>. <br> Il dispose d'une
+                  page de connexion
+                  et
+                  d'inscription, une page d'acceuil ou est afficher les differentes publications des utilisateurs et une
+                  page de profil ou on retrouves les information de l'utilisateurs et aussi la possibilité de supprimer
+                  les publications postées.
+                </p>
+                <p class="mb-2">
+                  Le backend a été realisé avec <span class="bold-word">NodeJS</span> et <span
+                    class="bold-word">Express</span>
+                </p>
+                <p class="mb-4">La base de donnée est lui gerer avec <span class="bold-word">MySQL</span> et l'ORM <span
+                    class="bold-word">Sequelize</span>.</p>
+
+
                 <a class="btn btn-primary" href="https://github.com/AliNamooya/NamooyaMuhammadAli_7_10-12-2021">
 
                   Voir le code

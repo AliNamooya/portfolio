@@ -1,5 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
 .radius20 {
   border-radius: 20px;
+}
+
+.bold-word {
+  font-weight: bold;
+}
+
+header,
+#parcours,
+#projet,
+#contact {
+  padding: 3rem 2rem 3rem 2rem;
+}
+
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #d6f3ff;
 }
 
 #mainNav {
@@ -19,7 +41,7 @@
 
 .masthead {
   height: 100vh;
-  background-image: url(/images/banner_left.png);
+  background-image: url(/images/banner-left.png);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -52,7 +74,7 @@
 }
 
 #parcours .timeline-content .timeline-content-header {
-  background-color: #cfedfa;
+  background-color: #c7e5f2;
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
   padding: 0.5rem 1rem;
   margin-bottom: 0;
@@ -72,7 +94,7 @@
   content: "";
   height: 15px;
   width: 16px;
-  background-color: #cfedfa;
+  background-color: #c7e5f2;
   top: 40px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -93,25 +115,22 @@
   position: absolute;
   background: #7d38b1;
   color: #eeadb3;
-  height: 55px;
-  width: 55px;
   text-align: center;
   line-height: 55px;
   border-radius: 50%;
   top: 20px;
-  font-size: 30px;
-  font-weight: 100px;
+  font-size: 40px;
 }
 
 #parcours .parcours-item-1 .icon,
 #parcours .parcours-item-3 .icon,
 #parcours .parcours-item-5 .icon {
-  right: -70px;
+  right: -67px;
 }
 
 #parcours .parcours-item-2 .icon,
 #parcours .parcours-item-4 .icon {
-  left: -70px;
+  left: -67px;
 }
 
 #projet {
@@ -136,14 +155,14 @@
 
 #contact .contact-list {
   list-style: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #contact .contact-list .contact-icon {
   color: #1682f7;
-  height: 55px;
-  width: 55px;
-  font-size: 30px;
-  font-weight: 100px;
+  font-size: 60px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }

@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
 $primary-color: #be8cfd;
 $secondary-color: #3b209e;
 $third-color: #1682f7;
@@ -9,11 +15,29 @@ $sixt-color: #d6f3ff;
   border-radius: 20px;
 }
 
+.bold-word {
+  font-weight: bold;
+}
+
+header,
+#parcours,
+#projet,
+#contact {
+  padding: 3rem 2rem 3rem 2rem;
+}
+
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $sixt-color;
+}
+
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-weight: 700;
 }
+
 .navbar {
   background-color: $secondary-color;
 
@@ -27,7 +51,7 @@ $sixt-color: #d6f3ff;
 
 .masthead {
   height: 100vh;
-  background-image: url(/images/banner_left.png);
+  background-image: url(/images/banner-left.png);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -59,7 +83,7 @@ $sixt-color: #d6f3ff;
     position: relative;
 
     .timeline-content-header {
-      background-color: #cfedfa;
+      background-color: #c7e5f2;
       border-bottom: 1px solid rgba(0, 0, 0, 0.125);
       padding: 0.5rem 1rem;
       margin-bottom: 0;
@@ -77,7 +101,7 @@ $sixt-color: #d6f3ff;
     content: "";
     height: 15px;
     width: 16px;
-    background-color: #cfedfa;
+    background-color: #c7e5f2;
     top: 40px;
     transform: rotate(45deg);
   }
@@ -96,25 +120,22 @@ $sixt-color: #d6f3ff;
     position: absolute;
     background: $fourth-color;
     color: $fifth-color;
-    height: 55px;
-    width: 55px;
     text-align: center;
     line-height: 55px;
     border-radius: 50%;
     top: 20px;
-    font-size: 30px;
-    font-weight: 100px;
+    font-size: 40px;
   }
 
   .parcours-item-1 .icon,
   .parcours-item-3 .icon,
   .parcours-item-5 .icon {
-    right: -70px;
+    right: -67px;
   }
 
   .parcours-item-2 .icon,
   .parcours-item-4 .icon {
-    left: -70px;
+    left: -67px;
   }
 }
 
@@ -136,13 +157,11 @@ $sixt-color: #d6f3ff;
 
   .contact-list {
     list-style: none;
+    justify-content: space-between;
 
     .contact-icon {
       color: $third-color;
-      height: 55px;
-      width: 55px;
-      font-size: 30px;
-      font-weight: 100px;
+      font-size: 60px;
       transition: all 0.2s ease-in-out;
     }
     .contact-icon:hover {
