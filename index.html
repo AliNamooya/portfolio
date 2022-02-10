@@ -17,7 +17,7 @@
 
 <body>
   <!-- navigation -->
-  <nav class="navbar navbar-expand-lg bg-black text-uppercase fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg  text-uppercase" id="mainNav">
     <div class="container justify-content-end">
       <!-- Regarder plus tard pour le responsive mobile, javascript -->
       <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded " type="button"
@@ -31,19 +31,16 @@
 
         <ul class="navbar-nav ms-auto me-auto">
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#acceuil">Acceuil</a>
+            <a class="nav-link py-3 px-0 px-lg-3 me-3 radius20" href="#">Accueil</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#parcours">Parcours</a>
+            <a class="nav-link py-3 px-0 px-lg-3 me-3 radius20" href="#parcours">Parcours</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#competence">Compétences</a>
+            <a class="nav-link py-3 px-0 px-lg-3 me-3 radius20" href="#projet">Projets</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#projet">Projets</a>
-          </li>
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a>
+            <a class="nav-link  py-3 px-0 px-lg-3  radius20" href="#contact">Contact</a>
           </li>
         </ul>
 
@@ -51,13 +48,16 @@
     </div>
   </nav>
 
-  <header class="masthead text-black text-center">
-    <!-- Masthead Heading-->
-    <h1 class="masthead-heading text-uppercase mb-0">Bienvenue</h1>
-    <!-- Masthead Subheading-->
-    <p class="masthead-subheading font-weight-light mb-0">Je suis Ali, dévéloppeur web junior</p>
-    <p class="masthead-subheading font-weight-light mb-0">Vous pouvez en apprendre d'avantages sur moi en consultant mon
-      parcours et les projets que j'ai réalisés</p>
+  <header class="masthead ps-5 pt-5">
+    <div class="masthead-text-wrapper card p-3 radius20">
+      <!-- Masthead Heading-->
+      <h1 class="masthead-heading text-uppercase mb-3 ">Bienvenue</h1>
+      <!-- Masthead Subheading-->
+      <p class="masthead-subheading font-weight-light mb-0">Je suis Ali, dévéloppeur web junior</p>
+      <p class="masthead-subheading font-weight-light mb-0">Vous pouvez en apprendre d'avantages sur moi en consultant
+        mon
+        parcours et les projets que j'ai réalisés</p>
+    </div>
   </header>
 
 
@@ -72,33 +72,33 @@
 
         <div class="timeline-content-wrapper d-flex justify-content-start">
 
-          <div class="timeline-content parcours-item-1 card">
+          <div class="timeline-content parcours-item-1 radius20">
             <i class="icon fas fa-laptop-code"></i>
-            <div class="card-header">
-              <div class="timeline-year">2021-2022</div>
-              <h3 class="card-title ">Formation Développeur Web Openclassrooms</h3>
-              <p class="card-subtitle ">6 projets réalisés</p>
+            <div class="timeline-content-header">
+              <div class="timeline-content-year">2021-2022</div>
+              <h3 class="timeline-content-title ">Formation Développeur Web Openclassrooms</h3>
+              <p class="timeline-content-info">6 projets réalisés</p>
             </div>
 
-            <div class="card-body">
-              <h4 class="sub-title">Compétences dévéloppées :</h4>
+            <div class="timeline-content-body">
+              <h4 class="timeline-content-sub-title">Compétences dévéloppées :</h4>
               <ul class='timeline-list'>
-                <li class="timeline-list-item">
+                <li class="timeline-content-list-item">
                   Intégration d'une maquette en site web (HTML5/CSS3)
                 </li>
-                <li class="timeline-list-item">
+                <li class="timeline-content-list-item">
                   Dynamisation d'une page web grace a des animations CSS (HTML5/SASS)
                 </li>
-                <li class="timeline-list-item">
+                <li class="timeline-content-list-item">
                   Optimisation du référencement SEO d'un site web exsitant
                 </li>
-                <li class="timeline-list-item">
+                <li class="timeline-content-list-item">
                   Création du backend d'un site e-commerce (Javascript)
                 </li>
-                <li class="timeline-list-item">
+                <li class="timeline-content-list-item">
                   Construction d'une API sécurisée pour une application alimentaire (Node JS, Express JS, Mongo DB)
                 </li>
-                <li class="timeline-list-item">
+                <li class="timeline-content-list-item">
                   Création d'un réseau social d'entreprise (Vue JS, Node JS, Express JS, MySQL)
                 </li>
               </ul>
@@ -107,24 +107,24 @@
         </div>
 
         <div class="timeline-content-wrapper  d-flex justify-content-end">
-          <div class="timeline-content  parcours-item-2 card ">
+          <div class="timeline-content  parcours-item-2 radius20 ">
             <i class="icon fas fa-dolly-flatbed"></i>
-            <div class="card-header">
-              <div class="timeline-year">2019-2021</div>
+            <div class="timeline-content-header">
+              <div class="timeline-content-year">2019-2021</div>
 
-              <h3 class="title">Brandecision</h3>
-              <p class="info">Assistant chef de logistique</p>
+              <h3 class="timeline-content-title">Brandecision</h3>
+              <p class="timeline-content-info">Assistant chef de logistique</p>
             </div>
-            <div class="card-body">
-              <h4 class="sub-title">Compétences dévéloppées :</h4>
-              <ul class="timeline-list">
-                <li class="timeline-list-item">
+            <div class="timeline-content-body">
+              <h4 class="timeline-content-sub-title">Compétences dévéloppées :</h4>
+              <ul class="timeline-content-list">
+                <li class="timeline-content-list-item">
                   Superviser une équipe
                 </li>
-                <li class="timeline-list-item">
+                <li class="timeline-content-list-item">
                   Mettre en place un inventaire
                 </li>
-                <li class="timeline-list-item">
+                <li class="timeline-content-list-item">
                   Reception et expédition de marchandises
                 </li>
               </ul>
@@ -133,23 +133,23 @@
         </div>
 
         <div class="timeline-content-wrapper d-flex justify-content-start">
-          <div class="timeline-content parcours-item-3 card  ">
+          <div class="timeline-content parcours-item-3 radius20  ">
             <i class="icon fas fa-comments"></i>
-            <div class="card-header">
+            <div class="timeline-content-header">
 
-              <div class="timeline-year">2019</div>
+              <div class="timeline-content-year">2019</div>
 
-              <h3 class="title">BTS Communication</h3>
+              <h3 class="timeline-content-title">BTS Communication</h3>
             </div>
-            <div class="card-body">
+            <div class="timeline-content-body">
 
-              <h4 class="sub-title">Compétences dévéloppées :</h4>
-              <ul class="timeline-list">
-                <li class="timeline-list-item">Dévéloppement d'un esprit analytique</li>
-                <li class="timeline-list-item">
+              <h4 class="timeline-content-sub-title">Compétences dévéloppées :</h4>
+              <ul class="timeline-content-list">
+                <li class="timeline-content-list-item">Dévéloppement d'un esprit analytique</li>
+                <li class="timeline-content-list-item">
                   Mettre en place des actions de communications sur des plateformes variées
                 </li>
-                <li class="timeline-list-item">
+                <li class="timeline-content-list-item">
                   Analyser des actions de communication déterminer les cibles, promesses, messages...
                 </li>
               </ul>
@@ -158,45 +158,46 @@
         </div>
 
         <div class="timeline-content-wrapper d-flex justify-content-end">
-          <div class="timeline-content parcours-item-4 card ">
+          <div class="timeline-content parcours-item-4 radius20 ">
             <i class="icon fas fa-mail-bulk"></i>
-            <div class="card-header">
-              <div class="timeline-year">2018 (4 mois)</div>
+            <div class="timeline-content-header">
+              <div class="timeline-content-year">2018 (4 mois)</div>
 
-              <h3 class="title">Info Media Publishing</h3>
-              <p class="info">Assistant chargé de communication/marketing</p>
+              <h3 class="timeline-content-title">Info Media Publishing</h3>
+              <p class="timeline-content-info">Assistant chargé de communication/marketing</p>
 
             </div>
-            <div class="card-body">
-              <h4 class="sub-title">Compétences dévéloppées :</h4>
-              <ul class="timeline-list">
-                <li class="timeline-list-item">Mettre en ligne des communiquées de press</li>
-                <li class="timeline-list-item">Gestions des contenues d'un site internet</li>
-                <li class="timeline-list-item">Participation a un salon professionel</li>
+            <div class="timeline-content-body">
+              <h4 class="timeline-content-sub-title">Compétences dévéloppées :</h4>
+              <ul class="timeline-content-list">
+                <li class="timeline-content-list-item">Mettre en ligne des communiquées de press</li>
+                <li class="timeline-content-list-item">Gestions des contenues d'un site internet</li>
+                <li class="timeline-content-list-item">Participation a un salon professionel</li>
               </ul>
             </div>
           </div>
         </div>
 
         <div class="timeline-content-wrapper d-flex justify-content-start">
-          <div class="timeline-content parcours-item-5 card  ">
+          <div class="timeline-content parcours-item-5 radius20  ">
             <i class=" icon fas fa-phone-volume"></i>
-            <div class="card-header">
-              <div class="timeline-year">2017 (2mois)</div>
+            <div class="timeline-content-header">
+              <div class="timeline-content-year">2017 (2mois)</div>
 
-              <h3 class="title">TeamTonic</h3>
-              <p class="info">Assistant commercial</p>
+              <h3 class="timeline-content-title">TeamTonic</h3>
+              <p class="timeline-content-info">Assistant commercial</p>
 
             </div>
-            <div class="card-body">
-              <h4 class="sub-title">Compétences dévéloppées :</h4>
-              <ul class="timeline-list">
-                <li class="timeline-list-item">Mettre en place une veille concurentielle, juridique, économique...
+            <div class="timeline-content-body">
+              <h4 class="timeline-content-sub-title">Compétences dévéloppées :</h4>
+              <ul class="timeline-content-list">
+                <li class="timeline-content-list-item">Mettre en place une veille concurentielle, juridique,
+                  économique...
                 </li>
-                <li class="timeline-list-item">
+                <li class="timeline-content-list-item">
                   Appeler des prestataires pour négocier des tarifs
                 </li>
-                <li class="timeline-list-item">
+                <li class="timeline-content-list-item">
                   Mettre en place et participer a des événements
                 </li>
               </ul>
@@ -210,64 +211,52 @@
   </section>
 
 
-  <!-- Projet section -->
+  <!-- Projet section (DESC) -->
   <section class="page-section projet" id="projet">
     <div class="container">
       <h2 class="page-section-heading text-center text-uppercase  mb-0">Projets</h2>
       <!-- Grid items -->
       <div class="row justify-content-center">
-        <!-- Projet Item 1-->
+        <!-- Projet Item 6-->
         <div class="col-md-6 col-lg-4 mb-5">
-          <div class="projet-item mx-auto" data-bs-toggle="modal" data-bs-target="#projetModal1">
-            <div class="projet-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="projet-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-            </div>
-            <img class="img-fluid" src="images/banner_portfolio.png" alt="..." />
+          <div class="projet-item mx-auto " data-bs-toggle="modal" data-bs-target="#projetModal6">
+
+            <img class="img-fluid shadow radius20" src="images/groupomania.png" alt="..." />
           </div>
         </div>
         <!-- Projet Item 2-->
         <div class="col-md-6 col-lg-4 mb-5">
-          <div class="projet-item mx-auto" data-bs-toggle="modal" data-bs-target="#projetModal2">
-            <div class="projet-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="projet-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-            </div>
-            <img class="img-fluid" src="images/images.jpeg" alt="..." />
+          <div class="projet-item mx-auto" data-bs-toggle="modal" data-bs-target="#projetModal5">
+
+            <img class="img-fluid shadow radius20" src="images/hottakes.png" alt="..." />
           </div>
         </div>
         <!-- Portfolio Item 3-->
         <div class="col-md-6 col-lg-4 mb-5">
-          <div class="projet-item mx-auto" data-bs-toggle="modal" data-bs-target="#projetModal3">
-            <div class="projet-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="projet-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-            </div>
-            <img class="img-fluid" src="images/images.png" alt="..." />
+          <div class="projet-item mx-auto" data-bs-toggle="modal" data-bs-target="#projetModal4">
+
+            <img class="img-fluid shadow radius20" src="images/kanap.png" alt="..." />
           </div>
         </div>
         <!-- Projet Item 4-->
         <div class="col-md-6 col-lg-4 mb-5">
-          <div class="projet-item mx-auto" data-bs-toggle="modal" data-bs-target="#projetModal4">
-            <div class="projet-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="projet-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-            </div>
-            <img class="img-fluid" src="images/lead-developpeur.jpeg" alt="..." />
+          <div class="projet-item mx-auto" data-bs-toggle="modal" data-bs-target="#projetModal3">
+
+            <img class="img-fluid shadow radius20" src="images/chouette-agence.png" alt="..." />
           </div>
         </div>
         <!-- Projet Item 5-->
         <div class="col-md-6 col-lg-4 mb-5">
-          <div class="projet-item mx-auto" data-bs-toggle="modal" data-bs-target="#projetModal5">
-            <div class="projet-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="projet-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-            </div>
-            <img class="img-fluid" src="images/téléchargement (1).jpeg" alt="..." />
+          <div class="projet-item mx-auto" data-bs-toggle="modal" data-bs-target="#projetModal2">
+
+            <img class="img-fluid shadow radius20" src="images/ohmyfood.png" alt="..." />
           </div>
         </div>
         <!-- Projet Item 6-->
         <div class="col-md-6 col-lg-4 mb-5">
-          <div class="projet-item mx-auto" data-bs-toggle="modal" data-bs-target="#projetModal6">
-            <div class="projet-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="projet-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-            </div>
-            <img class="img-fluid" src="images/téléchargement (2).jpeg" alt="..." />
+          <div class="projet-item mx-auto" data-bs-toggle="modal" data-bs-target="#projetModal1">
+
+            <img class="img-fluid shadow radius20" src="images/reservia.png" alt="..." />
           </div>
         </div>
 
@@ -286,18 +275,19 @@
     <h2>Contact</h2>
 
     <div class="container">
-      <ul class="navbar-nav ms-auto me-auto">
-        <li class="nav-item mx-0 mx-lg-1">
-          <a class="nav-link py-3 px-0 px-lg-3 " href="#">LinkedIn</a>
+      <ul class="contact-list ms-auto me-auto  d-flex flex-row justify-content-center">
+        <li class="contact-item mx-0 mx-lg-1">
+
+          <a class="contact-link py-3 px-0 px-lg-3 " href="#"><i class="contact-icon fab fa-linkedin"></i></a>
         </li>
-        <li class="nav-item mx-0 mx-lg-1">
-          <a class="nav-link py-3 px-0 px-lg-3 " href="#">Github</a>
+        <li class="contact-item mx-0 mx-lg-1">
+          <a class="contact-link py-3 px-0 px-lg-3 " href="#"><i class="contact-icon fab fa-github-square"></i></a>
         </li>
-        <li class="nav-item mx-0 mx-lg-1">
-          <a class="nav-link py-3 px-0 px-lg-3 " href="#">Mail</a>
+        <li class="contact-item mx-0 mx-lg-1">
+          <a class="contact-link py-3 px-0 px-lg-3 " href="#"><i class="contact-icon fas fa-paper-plane"></i></a>
         </li>
-        <li class="nav-item mx-0 mx-lg-1">
-          <a class="nav-link py-3 px-0 px-lg-3" href="#">CV</a>
+        <li class="contact-item mx-0 mx-lg-1">
+          <a class="contact-link py-3 px-0 px-lg-3" href="#"><i class="contact-icon far fa-file-alt"></i></a>
         </li>
       </ul>
     </div>
@@ -305,14 +295,12 @@
 
   </section>
 
-
-
   <!-- Projet modals -->
-  <!-- Projet Modal 1 -->
-  <div class="projet-modal modal fade" id="projetModal1" tabindex="-1" aria-labelledby="projetModal1"
+  <!-- Projet Modal 6 -->
+  <div class="projet-modal modal fade" id="projetModal6" tabindex="-1" aria-labelledby="projetModal6"
     aria-hidden="true">
     <div class="modal-dialog modal-xl">
-      <div class="modal-content">
+      <div class="modal-content radius20">
         <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
             aria-label="Close"></button></div>
         <div class="modal-body text-center pb-5">
@@ -322,113 +310,17 @@
                 <!-- Modal Title -->
                 <h2 class="projet-modal-title text-secondary text-uppercase mb-0">Groupomania</h2>
                 <!-- Modal Image -->
-                <img class="img-fluid rounded mb-5" src="images/banner_portfolio.png" alt="image projet 1">
+                <img class="img-fluid rounded mb-5 shadow" src="images/groupomania.png" alt="image projet 6">
                 <!-- Modal Description -->
                 <p class="mb-4">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, nostrum expedita, sapiente deserunt
                   sit dolores alias voluptates recusandae eligendi animi adipisci incidunt repellendus mollitia amet
                   aliquid, illum sunt assumenda perferendis!
                 </p>
-                <button class="btn btn-primary" href="#" data-bs-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Fermer la fenêtre
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Projet Modal 2 -->
-  <div class="projet-modal modal fade" id="projetModal2" tabindex="-1" aria-labelledby="projetModal2"
-    aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-      <div class="modal-content">
-        <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-            aria-label="Close"></button></div>
-        <div class="modal-body text-center pb-5">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Modal Title -->
-                <h2 class="projet-modal-title text-secondary text-uppercase mb-0">Piquante</h2>
-                <!-- Modal Image -->
-                <img class="img-fluid rounded mb-5" src="" alt="image projet 2">
-                <!-- Modal Description -->
-                <p class="mb-4">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, nostrum expedita, sapiente deserunt
-                  sit dolores alias voluptates recusandae eligendi animi adipisci incidunt repellendus mollitia amet
-                  aliquid, illum sunt assumenda perferendis!
-                </p>
-                <button class="btn btn-primary" href="#" data-bs-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Fermer la fenêtre
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Projet Modal 3 -->
-  <div class="projet-modal modal fade" id="projetModal3" tabindex="-1" aria-labelledby="projetModal3"
-    aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-      <div class="modal-content">
-        <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-            aria-label="Close"></button></div>
-        <div class="modal-body text-center pb-5">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Modal Title -->
-                <h2 class="projet-modal-title text-secondary text-uppercase mb-0">Kanap</h2>
-                <!-- Modal Image -->
-                <img class="img-fluid rounded mb-5" src="" alt="image projet 3">
-                <!-- Modal Description -->
-                <p class="mb-4">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, nostrum expedita, sapiente deserunt
-                  sit dolores alias voluptates recusandae eligendi animi adipisci incidunt repellendus mollitia amet
-                  aliquid, illum sunt assumenda perferendis!
-                </p>
-                <button class="btn btn-primary" href="#" data-bs-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Fermer la fenêtre
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Projet Modal 4 -->
-  <div class="projet-modal modal fade" id="projetModal4" tabindex="-1" aria-labelledby="projetModal4"
-    aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-      <div class="modal-content">
-        <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-            aria-label="Close"></button></div>
-        <div class="modal-body text-center pb-5">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Modal Title -->
-                <h2 class="projet-modal-title text-secondary text-uppercase mb-0">La chouette Agence</h2>
-                <!-- Modal Image -->
-                <img class="img-fluid rounded mb-5" src="" alt="image projet 1">
-                <!-- Modal Description -->
-                <p class="mb-4">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, nostrum expedita, sapiente deserunt
-                  sit dolores alias voluptates recusandae eligendi animi adipisci incidunt repellendus mollitia amet
-                  aliquid, illum sunt assumenda perferendis!
-                </p>
-                <button class="btn btn-primary" href="#" data-bs-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Fermer la fenêtre
-                </button>
+                <a class="btn btn-primary" href="https://github.com/AliNamooya/NamooyaMuhammadAli_7_10-12-2021">
+
+                  Voir le code
+                </a>
               </div>
             </div>
           </div>
@@ -440,7 +332,103 @@
   <div class="projet-modal modal fade" id="projetModal5" tabindex="-1" aria-labelledby="projetModal5"
     aria-hidden="true">
     <div class="modal-dialog modal-xl">
-      <div class="modal-content">
+      <div class="modal-content radius20">
+        <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+            aria-label="Close"></button></div>
+        <div class="modal-body text-center pb-5">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Modal Title -->
+                <h2 class="projet-modal-title text-secondary text-uppercase mb-0">Piquante</h2>
+                <!-- Modal Image -->
+                <img class="img-fluid rounded mb-5 shadow" src="images/hottakes.png" alt="image projet 5">
+                <!-- Modal Description -->
+                <p class="mb-4">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, nostrum expedita, sapiente deserunt
+                  sit dolores alias voluptates recusandae eligendi animi adipisci incidunt repellendus mollitia amet
+                  aliquid, illum sunt assumenda perferendis!
+                </p>
+                <a class="btn btn-primary" href="https://github.com/AliNamooya/NamooyaMuhammadAli_6_22-11-2021">
+
+                  Voir le code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Projet Modal 4 -->
+  <div class="projet-modal modal fade" id="projetModal4" tabindex="-1" aria-labelledby="projetModal4"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content radius20">
+        <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+            aria-label="Close"></button></div>
+        <div class="modal-body text-center pb-5">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Modal Title -->
+                <h2 class="projet-modal-title text-secondary text-uppercase mb-0">Kanap</h2>
+                <!-- Modal Image -->
+                <img class="img-fluid rounded mb-5 shadow" src="images/kanap.png" alt="image projet 4">
+                <!-- Modal Description -->
+                <p class="mb-4">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, nostrum expedita, sapiente deserunt
+                  sit dolores alias voluptates recusandae eligendi animi adipisci incidunt repellendus mollitia amet
+                  aliquid, illum sunt assumenda perferendis!
+                </p>
+                <a class="btn btn-primary" href="https://github.com/AliNamooya/NamooyaMuhammadAli_5_2-09-2021">
+
+                  Voir le code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Projet Modal 3 -->
+  <div class="projet-modal modal fade" id="projetModal3" tabindex="-1" aria-labelledby="projetModal3"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content radius20">
+        <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+            aria-label="Close"></button></div>
+        <div class="modal-body text-center pb-5">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Modal Title -->
+                <h2 class="projet-modal-title text-secondary text-uppercase mb-0">La chouette Agence</h2>
+                <!-- Modal Image -->
+                <img class="img-fluid rounded mb-5 shadow" src="images/chouette-agence.png" alt="image projet 3">
+                <!-- Modal Description -->
+                <p class="mb-4">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, nostrum expedita, sapiente deserunt
+                  sit dolores alias voluptates recusandae eligendi animi adipisci incidunt repellendus mollitia amet
+                  aliquid, illum sunt assumenda perferendis!
+                </p>
+                <a class="btn btn-primary" href="https://alinamooya.github.io/NamooyaMuhammadAli_4_15-09-2021/">
+
+                  Visitez le site
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Projet Modal 2 -->
+  <div class="projet-modal modal fade" id="projetModal2" tabindex="-1" aria-labelledby="projetModal2"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content radius20">
         <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
             aria-label="Close"></button></div>
         <div class="modal-body text-center pb-5">
@@ -450,17 +438,17 @@
                 <!-- Modal Title -->
                 <h2 class="projet-modal-title text-secondary text-uppercase mb-0">OhMyFood</h2>
                 <!-- Modal Image -->
-                <img class="img-fluid rounded mb-5" src="images/banner_portfolio.png" alt="image projet 1">
+                <img class="img-fluid rounded mb-5 shadow" src="images/ohmyfood.png" alt="image projet 2">
                 <!-- Modal Description -->
                 <p class="mb-4">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, nostrum expedita, sapiente deserunt
                   sit dolores alias voluptates recusandae eligendi animi adipisci incidunt repellendus mollitia amet
                   aliquid, illum sunt assumenda perferendis!
                 </p>
-                <button class="btn btn-primary" href="#" data-bs-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Fermer la fenêtre
-                </button>
+                <a class="btn btn-primary" href="https://alinamooya.github.io/NamooyaMuhammadAli_3_01-08-2021/">
+
+                  Visitez le site
+                </a>
               </div>
             </div>
           </div>
@@ -468,11 +456,11 @@
       </div>
     </div>
   </div>
-  <!-- Projet Modal 6 -->
-  <div class="projet-modal modal fade" id="projetModal6" tabindex="-1" aria-labelledby="projetModal6"
+  <!-- Projet Modal 1 -->
+  <div class="projet-modal modal fade" id="projetModal1" tabindex="-1" aria-labelledby="projetModal1"
     aria-hidden="true">
     <div class="modal-dialog modal-xl">
-      <div class="modal-content">
+      <div class="modal-content radius20">
         <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
             aria-label="Close"></button></div>
         <div class="modal-body text-center pb-5">
@@ -482,17 +470,17 @@
                 <!-- Modal Title -->
                 <h2 class="projet-modal-title text-secondary text-uppercase mb-0">Reservia</h2>
                 <!-- Modal Image -->
-                <img class="img-fluid rounded mb-5" src="" alt="image projet 6">
+                <img class="img-fluid rounded mb-5 shadow" src="images/reservia.png" alt="image projet 1">
                 <!-- Modal Description -->
                 <p class="mb-4">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, nostrum expedita, sapiente deserunt
                   sit dolores alias voluptates recusandae eligendi animi adipisci incidunt repellendus mollitia amet
                   aliquid, illum sunt assumenda perferendis!
                 </p>
-                <button class="btn btn-primary" href="#" data-bs-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Fermer la fenêtre
-                </button>
+                <a class="btn btn-primary" href="https://alinamooya.github.io/NamooyaMuhammadAli_2_23-05-2021/">
+
+                  Visitez le site
+                </a>
               </div>
             </div>
           </div>

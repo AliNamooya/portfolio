@@ -1,48 +1,87 @@
+$primary-color: #be8cfd;
+$secondary-color: #3b209e;
+$third-color: #1682f7;
+$fourth-color: #7d38b1;
+$fifth-color: #eeadb3;
+$sixt-color: #d6f3ff;
+
+.radius20 {
+  border-radius: 20px;
+}
+
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-weight: 700;
 }
+.navbar {
+  background-color: $secondary-color;
+
+  .nav-link {
+    background-color: $third-color;
+    color: $secondary-color;
+  }
+}
 
 // acceuil-------------------------
 
 .masthead {
-  padding-top: calc(6rem + 104px);
-  padding-bottom: 6rem;
   height: 100vh;
-  background-image: url(/images/banner_portfolio.png);
+  background-image: url(/images/banner_left.png);
   background-size: cover;
+  background-position: center;
   background-attachment: fixed;
+
+  .masthead-text-wrapper {
+    width: 30%;
+
+    background-image: linear-gradient(120deg, #7f46a5 35%, #6054c0 100%);
+    color: white;
+  }
 }
 
 // Parcours---------------------------
 #parcours {
-  background-color: grey;
-  padding: 6rem 0;
+  background-color: $fourth-color;
 
   .center-line {
     position: absolute;
     height: 170%;
     width: 4px;
-    background-color: white;
+    background-color: $sixt-color;
     left: 50%;
     transform: translateX(-50%);
   }
 
   .timeline-content {
-    border-radius: 5px;
     width: calc(50% - 40px);
+    background-color: $sixt-color;
     position: relative;
+
+    .timeline-content-header {
+      background-color: #cfedfa;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+      padding: 0.5rem 1rem;
+      margin-bottom: 0;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+
+    .timeline-content-body {
+      flex: 1 1 auto;
+      padding: 1rem 1rem;
+    }
   }
   .timeline-content::before {
     position: absolute;
     content: "";
     height: 15px;
-    width: 15px;
-    background-color: white;
+    width: 16px;
+    background-color: #cfedfa;
     top: 40px;
     transform: rotate(45deg);
   }
+
   .parcours-item-1::before,
   .parcours-item-3::before,
   .parcours-item-5::before {
@@ -55,8 +94,8 @@
 
   .icon {
     position: absolute;
-    background: grey;
-    color: white;
+    background: $fourth-color;
+    color: $fifth-color;
     height: 55px;
     width: 55px;
     text-align: center;
@@ -80,7 +119,40 @@
 }
 
 #projet {
-  padding: 6rem 0;
+  background-color: $primary-color;
+  height: 100vh;
+  img {
+    transition: all 0.2s ease-in-out;
+  }
+
+  img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}
+
+#contact {
+  background-color: $secondary-color;
+
+  .contact-list {
+    list-style: none;
+
+    .contact-icon {
+      color: $third-color;
+      height: 55px;
+      width: 55px;
+      font-size: 30px;
+      font-weight: 100px;
+      transition: all 0.2s ease-in-out;
+    }
+    .contact-icon:hover {
+      transform: scale(1.5);
+    }
+  }
+}
+
+.modal-content {
+  background-color: $sixt-color;
 }
 
 // responsive--------------------------
