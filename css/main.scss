@@ -37,13 +37,17 @@ h2 {
   padding-bottom: 1rem;
   font-weight: 700;
 }
-
+.navbar-toggler {
+  background-color: $third-color;
+  color: $secondary-color;
+}
 .navbar {
   background-color: $secondary-color;
 
   .nav-link {
     background-color: $third-color;
     color: $secondary-color;
+    text-align: center;
   }
 }
 
@@ -57,9 +61,8 @@ h2 {
   background-attachment: fixed;
 
   .masthead-text-wrapper {
-    width: 30%;
-
-    background-image: linear-gradient(120deg, #7f46a5 35%, #6054c0 100%);
+    width: 40%;
+    background-color: #7d38b1e7;
     color: white;
   }
 }
@@ -141,7 +144,7 @@ h2 {
 
 #projet {
   background-color: $primary-color;
-  height: 100vh;
+
   img {
     transition: all 0.2s ease-in-out;
   }
@@ -158,6 +161,7 @@ h2 {
   .contact-list {
     list-style: none;
     justify-content: space-between;
+    gap: 10%;
 
     .contact-icon {
       color: $third-color;
@@ -176,6 +180,9 @@ h2 {
 
 // responsive--------------------------
 @media screen and (max-width: 960px) {
+  .masthead-text-wrapper {
+    width: 50% !important;
+  }
   #parcours .container {
     margin-left: 30px;
   }
@@ -197,14 +204,35 @@ h2 {
   .timeline-content::before {
     left: -8px;
   }
+  .parcours-item-1 .icon,
+  .parcours-item-3 .icon,
+  .parcours-item-5 .icon {
+    right: unset !important;
+    left: -67px;
+  }
+}
 
-  .icon {
-    left: -64px;
+@media screen and (max-width: 768px) {
+  .masthead-text-wrapper {
+    width: 95% !important;
+  }
+  .masthead {
+    background-position: center right -260px;
   }
 }
 
 @media screen and (max-width: 576px) {
   .center-line {
     height: 170% !important;
+  }
+
+  .masthead {
+    background-position: center right -230px;
+  }
+  .masthead-text-wrapper {
+    margin-top: 15%;
+  }
+  #projet {
+    height: auto;
   }
 }

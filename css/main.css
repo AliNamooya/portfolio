@@ -30,6 +30,11 @@ h2 {
   font-weight: 700;
 }
 
+.navbar-toggler {
+  background-color: #1682f7;
+  color: #3b209e;
+}
+
 .navbar {
   background-color: #3b209e;
 }
@@ -37,6 +42,7 @@ h2 {
 .navbar .nav-link {
   background-color: #1682f7;
   color: #3b209e;
+  text-align: center;
 }
 
 .masthead {
@@ -48,8 +54,8 @@ h2 {
 }
 
 .masthead .masthead-text-wrapper {
-  width: 30%;
-  background-image: linear-gradient(120deg, #7f46a5 35%, #6054c0 100%);
+  width: 40%;
+  background-color: #7d38b1e7;
   color: white;
 }
 
@@ -135,7 +141,6 @@ h2 {
 
 #projet {
   background-color: #be8cfd;
-  height: 100vh;
 }
 
 #projet img {
@@ -158,6 +163,7 @@ h2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 10%;
 }
 
 #contact .contact-list .contact-icon {
@@ -177,6 +183,9 @@ h2 {
 }
 
 @media screen and (max-width: 960px) {
+  .masthead-text-wrapper {
+    width: 50% !important;
+  }
   #parcours .container {
     margin-left: 30px;
   }
@@ -197,14 +206,35 @@ h2 {
   .timeline-content::before {
     left: -8px;
   }
-  .icon {
-    left: -64px;
+  .parcours-item-1 .icon,
+  .parcours-item-3 .icon,
+  .parcours-item-5 .icon {
+    right: unset !important;
+    left: -67px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .masthead-text-wrapper {
+    width: 95% !important;
+  }
+  .masthead {
+    background-position: center right -260px;
   }
 }
 
 @media screen and (max-width: 576px) {
   .center-line {
     height: 170% !important;
+  }
+  .masthead {
+    background-position: center right -230px;
+  }
+  .masthead-text-wrapper {
+    margin-top: 15%;
+  }
+  #projet {
+    height: auto;
   }
 }
 /*# sourceMappingURL=main.css.map */
