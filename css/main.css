@@ -215,6 +215,9 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
+  .center-line {
+    height: 160% !important;
+  }
   .masthead-text-wrapper {
     width: 95% !important;
   }
@@ -225,7 +228,7 @@ h2 {
 
 @media screen and (max-width: 576px) {
   .center-line {
-    height: 170% !important;
+    height: 0 !important;
   }
   .masthead {
     background-position: center right -230px;
