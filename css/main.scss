@@ -261,12 +261,12 @@ h2 {
 }
 @media screen and (max-width: 414px) {
   .background-fixed::before {
-    background-position: center right -340px;
+    background-position: center right -330px;
   }
 }
 
-@media screen and (max-width: 393px) {
-  .background-fixed::before {
-    background-position: center right -310px;
-  }
-}
+// @media screen and (max-width: 393px) {
+//   .background-fixed::before {
+//     background-position: center right -310px;
+//   }
+// }
