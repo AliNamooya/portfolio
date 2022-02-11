@@ -47,7 +47,7 @@ h2 {
 
 .masthead {
   height: 100vh;
-  background-image: url("../images/banner_left-1.png");
+  background-image: url("../images/banner_left-2.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -160,10 +160,18 @@ h2 {
 
 #contact .contact-list {
   list-style: none;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: auto;
+  padding-left: 0;
 }
 
 #contact .contact-list .contact-icon {
@@ -183,6 +191,9 @@ h2 {
 }
 
 @media screen and (max-width: 960px) {
+  .masthead {
+    background-position: center right -390px;
+  }
   .masthead-text-wrapper {
     width: 50% !important;
   }
@@ -238,6 +249,18 @@ h2 {
   }
   #projet {
     height: auto;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .masthead {
+    background-position: center right -340px;
+  }
+}
+
+@media screen and (max-width: 393px) {
+  .masthead {
+    background-position: center right -310px;
   }
 }
 /*# sourceMappingURL=main.css.map */
