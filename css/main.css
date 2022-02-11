@@ -50,7 +50,6 @@ h2 {
   background-image: url("../images/banner_left-2.png");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
 }
 
 .masthead .masthead-text-wrapper {
