@@ -2,6 +2,9 @@
 
 body {
   font-family: "Ubuntu", sans-serif;
+  p {
+    font-size: large;
+  }
 }
 
 $primary-color: #be8cfd;
@@ -51,16 +54,18 @@ h2 {
     color: $secondary-color;
     text-align: center;
     font-size: 20px;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .nav-link:hover {
+    transform: scale(1.1);
   }
 }
 
-// acceuil-------------------------
+// accueil-------------------------------------
 
 .masthead {
   height: 100vh;
-  // background-image: url("../images/banner_left-2.png");
-  // background-size: cover;
-  // background-position: center;
 
   .masthead-text-wrapper {
     width: 40%;
@@ -86,7 +91,7 @@ h2 {
   background-position: center;
 }
 
-// Parcours---------------------------
+// Parcours-----------------------------------------
 #parcours {
   background-color: $fourth-color;
   position: relative;
@@ -107,6 +112,10 @@ h2 {
     background-color: $sixt-color;
     position: relative;
 
+    li {
+      font-size: large;
+    }
+
     .timeline-content-header {
       background-color: #c7e5f2;
       border-bottom: 1px solid rgba(0, 0, 0, 0.125);
@@ -119,6 +128,10 @@ h2 {
     .timeline-content-body {
       flex: 1 1 auto;
       padding: 1rem 1rem;
+    }
+
+    .timeline-content-list-item {
+      margin-bottom: 0.25rem;
     }
   }
   .timeline-content::before {
@@ -164,6 +177,7 @@ h2 {
   }
 }
 
+// Projet-----------------------------------------
 #projet {
   background-color: $primary-color;
 
@@ -177,8 +191,17 @@ h2 {
   }
 }
 
+.projet-modal-list-item {
+  margin-bottom: 0.25rem;
+}
+
+// Parcours-----------------------------------------
 #contact {
   background-color: $secondary-color;
+
+  .info {
+    width: 50%;
+  }
 
   .contact-list {
     list-style: none;
@@ -199,6 +222,7 @@ h2 {
   }
 }
 
+// Modal-----------------------------------------
 .modal-content {
   background-color: $sixt-color;
 }
@@ -236,6 +260,10 @@ h2 {
   .parcours-item-5 .icon {
     right: unset !important;
     left: -67px;
+  }
+
+  .info {
+    width: 100% !important;
   }
 }
 
