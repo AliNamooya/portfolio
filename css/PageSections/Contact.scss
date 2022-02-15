@@ -1,0 +1,25 @@
+#contact {
+  background-color: $secondary-color;
+
+  .info {
+    width: 50%;
+  }
+
+  .contact-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: auto;
+    padding-left: 0;
+
+    .contact-icon {
+      color: $third-color;
+      font-size: 50px;
+      transition: all 0.2s ease-in-out;
+    }
+    .contact-icon:hover {
+      transform: scale(1.5);
+    }
+  }
+}

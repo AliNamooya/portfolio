@@ -1,0 +1,27 @@
+.masthead {
+  height: 100vh;
+
+  .background-fixed {
+    position: relative;
+  }
+
+  .background-fixed::before {
+    content: "";
+    position: fixed;
+    z-index: -1;
+    display: block;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-image: url("../images/banner_left-2.png");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .masthead-text-wrapper {
+    width: 40%;
+    background-color: #7d38b1e7;
+    color: white;
+  }
+}

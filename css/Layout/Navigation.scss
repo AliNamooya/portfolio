@@ -1,0 +1,25 @@
+#mainNav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 700;
+  background-color: $secondary-color;
+
+  .navbar-toggler {
+    background-color: $third-color;
+    color: $secondary-color;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .nav-link {
+    background-color: $third-color;
+    color: $secondary-color;
+    text-align: center;
+    font-size: 20px;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .nav-link:hover {
+    transform: scale(1.1);
+  }
+}

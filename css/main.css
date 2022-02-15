@@ -32,20 +32,17 @@ h2 {
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-weight: 700;
+  background-color: #3b209e;
 }
 
-.navbar-toggler {
+#mainNav .navbar-toggler {
   background-color: #1682f7;
   color: #3b209e;
   font-size: 25px;
   font-weight: bold;
 }
 
-.navbar {
-  background-color: #3b209e;
-}
-
-.navbar .nav-link {
+#mainNav .nav-link {
   background-color: #1682f7;
   color: #3b209e;
   text-align: center;
@@ -54,7 +51,7 @@ h2 {
   transition: all 0.2s ease-in-out;
 }
 
-.navbar .nav-link:hover {
+#mainNav .nav-link:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -63,17 +60,11 @@ h2 {
   height: 100vh;
 }
 
-.masthead .masthead-text-wrapper {
-  width: 40%;
-  background-color: #7d38b1e7;
-  color: white;
-}
-
-.background-fixed {
+.masthead .background-fixed {
   position: relative;
 }
 
-.background-fixed::before {
+.masthead .background-fixed::before {
   content: "";
   position: fixed;
   z-index: -1;
@@ -85,6 +76,12 @@ h2 {
   background-image: url("../images/banner_left-2.png");
   background-size: cover;
   background-position: center;
+}
+
+.masthead .masthead-text-wrapper {
+  width: 40%;
+  background-color: #7d38b1e7;
+  color: white;
 }
 
 #parcours {
@@ -193,10 +190,6 @@ h2 {
           transform: scale(1.1);
 }
 
-.projet-modal-list-item {
-  margin-bottom: 0.25rem;
-}
-
 #contact {
   background-color: #3b209e;
 }
@@ -235,6 +228,14 @@ h2 {
 
 .modal-content {
   background-color: #d6f3ff;
+}
+
+.modal-content li {
+  font-size: large;
+}
+
+.projet-modal-list-item {
+  margin-bottom: 0.25rem;
 }
 
 @media screen and (max-width: 960px) {

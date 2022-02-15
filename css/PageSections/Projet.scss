@@ -1,0 +1,12 @@
+#projet {
+  background-color: $primary-color;
+
+  img {
+    transition: all 0.2s ease-in-out;
+  }
+
+  img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}
